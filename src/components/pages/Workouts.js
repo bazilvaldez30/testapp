@@ -39,10 +39,11 @@ const Workouts = () => {
 
   return (
     <>
-    <Container >
-    <Flex className="row" direction="row" m="5">
+    <Container className="mt-5">
+    <Flex direction="row" m="5">
+      <Flex className="row border">
         {workouts.map((workout) => (
-          <Card variation="outlined" width={"350px"}>
+          <Card variation="outlined" width={"428px"}>
             <Flex
               key={workout.id}
               direction="column"
@@ -74,6 +75,7 @@ const Workouts = () => {
   
           </Card>
         ))}
+      </Flex>
     </Flex>
     </Container>
       {/* <Button onClick={signOut}>Sign Out</Button> */}
